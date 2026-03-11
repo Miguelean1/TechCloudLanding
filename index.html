@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechCloud | Cloud Solutions</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background:#0b0f1a;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+position:fixed;
+width:100%;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+background:linear-gradient(45deg,#00e5ff,#4f7cff);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00e5ff;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:0 10%;
+background:
+radial-gradient(circle at 20% 30%,#1a2cff33,transparent),
+radial-gradient(circle at 80% 70%,#00e5ff33,transparent);
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+background:linear-gradient(90deg,#fff,#00e5ff);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.hero p{
+max-width:650px;
+margin:auto;
+font-size:20px;
+color:#cbd5ff;
+margin-bottom:35px;
+}
+
+.buttons{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:14px 32px;
+border-radius:30px;
+border:none;
+cursor:pointer;
+font-weight:600;
+transition:.3s;
+}
+
+.primary{
+background:linear-gradient(45deg,#00e5ff,#4f7cff);
+color:white;
+}
+
+.secondary{
+background:transparent;
+border:2px solid #00e5ff;
+color:#00e5ff;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(0,229,255,0.3);
+}
+
+/* SERVICES */
+
+.services{
+padding:120px 10%;
+text-align:center;
+}
+
+.services h2{
+font-size:40px;
+margin-bottom:70px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:35px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(12px);
+padding:35px;
+border-radius:15px;
+transition:.35s;
+border:1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#00e5ff;
+}
+
+.card p{
+color:#b8c0ff;
+font-size:15px;
+}
+
+/* ABOUT */
+
+.about{
+padding:120px 10%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.about p{
+color:#cbd5ff;
+line-height:1.7;
+}
+
+/* CTA */
+
+.cta{
+padding:120px 10%;
+text-align:center;
+background:linear-gradient(120deg,#4f7cff,#00e5ff);
+color:#0b0f1a;
+}
+
+.cta h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.cta p{
+margin-bottom:30px;
+font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+padding:40px;
+text-align:center;
+background:#070b14;
+color:#7a82c5;
+font-size:14px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:42px;
+}
+
+.about{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">TechCloud</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h1>Next Generation Cloud Technology</h1>
+
+<p>
+TechCloud helps companies scale faster using secure, intelligent and modern cloud infrastructure.
+</p>
+
+<div class="buttons">
+
+<button class="btn primary">Start Now</button>
+<button class="btn secondary">Learn More</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="services">
+
+<h2>Our Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Cloud Infrastructure</h3>
+<p>Flexible and scalable infrastructure designed for modern digital companies.</p>
+</div>
+
+<div class="card">
+<h3>Cybersecurity</h3>
+<p>Advanced protection systems that keep your data secure at all times.</p>
+</div>
+
+<div class="card">
+<h3>Data Analytics</h3>
+<p>Transform large datasets into valuable insights for your business.</p>
+</div>
+
+<div class="card">
+<h3>Artificial Intelligence</h3>
+<p>Integrate AI tools to automate processes and increase productivity.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<div>
+
+<h2>About TechCloud</h2>
+
+<p>
+TechCloud is a modern technology company specialized in cloud computing solutions. 
+Our goal is to help businesses become more efficient by using scalable infrastructure and intelligent systems.
+</p>
+
+</div>
+
+<div>
+
+<p>
+We work with startups and international companies to build secure digital platforms. 
+Our engineers focus on innovation, reliability and performance to ensure every client grows with confidence.
+</p>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>Start Your Cloud Journey</h2>
+
+<p>Join hundreds of companies already using TechCloud.</p>
+
+<button class="btn primary">Contact Our Team</button>
+
+</section>
+
+<footer>
+
+<p>© 2026 TechCloud — Cloud Infrastructure & AI Solutions</p>
+
+</footer>
+
+</body>
+</html>
